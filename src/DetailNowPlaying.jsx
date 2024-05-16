@@ -67,7 +67,7 @@ export default function NowPlayingDetail() {
               <p className="text-lg text-white mb-6">{detail?.overview}</p>
               <div className="flex justify-center items-center">
                 <button
-                  className="px-4 py-2 bg-red-600 text-white rounded-md flex items-center mr-4 hover:bg-red-700"
+                  className="px-4 py-2 bg-blue-600 text-white rounded-md flex items-center mr-4 hover:bg-blue-700"
                   onClick={() => playTrailer(detail?.id)}
                 >
                   <PlayCircleIcon style={{ marginRight: "0.5rem" }} />
