@@ -69,12 +69,12 @@ export default function Navbar({
                   Now Playing
                 </Link>
               </li>
-              <li className="ml-5 hover:text-yellow-400 flex items-center">
+              {/* <li className="ml-5 hover:text-yellow-400 flex items-center">
                 <FireIcon width={30} height={30} />
                 <Link to="/trending-movie" className="mr-4">
                   Trending Movie
                 </Link>
-              </li>
+              </li> */}
               <li className="text-white text-md hover:text-yellow-400">
                 <Link to="/profil" className="mr-4 flex items-center">
                   <UserCircleIcon width={30} height={30} />
