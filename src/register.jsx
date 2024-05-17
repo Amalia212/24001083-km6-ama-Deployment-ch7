@@ -19,7 +19,7 @@ export default function Register() {
     console.log("localStorage ", localStorage.getItem("token"));
     if (localStorage.getItem("token") !== null) {
       alert("Tidak perlu register lagi, karena akun kamu masih aktif kok");
-      navigate("/login");
+      navigate("/");
     }
   }, []);
 
