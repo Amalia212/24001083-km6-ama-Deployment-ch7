@@ -54,18 +54,20 @@ export default function NowPlayingDetail() {
           }}
         >
           <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-          <div className="flex justify-center container mx-auto py-20 items-center backdrop-blur-sm relative z-10">
-            <div className="max-w-3xl mx-auto text-center">
+          <div className="container mx-auto py-20 relative z-10 flex items-center">
+            <div className="w-1/2 p-4 flex justify-center">
               <img
                 src={`https://image.tmdb.org/t/p/w500/${detail?.poster_path}`}
                 alt={detail?.title}
-                className="w-auto h-auto rounded-lg mx-auto mb-8"
+                className="w-auto h-auto rounded-lg mb-8 shadow-lg"
               />
+            </div>
+            <div className="w-1/2 p-4 text-center lg:text-left">
               <h2 className="text-3xl font-semibold text-white mb-4">
                 {detail?.title}
               </h2>
               <p className="text-lg text-white mb-6">{detail?.overview}</p>
-              <div className="flex justify-center items-center">
+              <div className="flex justify-center lg:justify-start items-center">
                 <button
                   className="px-4 py-2 bg-blue-600 text-white rounded-md flex items-center mr-4 hover:bg-blue-700"
                   onClick={() => playTrailer(detail?.id)}
