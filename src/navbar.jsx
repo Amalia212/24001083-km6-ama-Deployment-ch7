@@ -58,13 +58,13 @@ export default function Navbar({
           {isLoggedIn ? (
             <>
               <li className="hover:text-yellow-400 flex items-center">
-                <HomeIcon width={30} height={30} />
+                {/* <HomeIcon width={30} height={30} /> */}
                 <Link to="/" className="ml-2">
                   Home
                 </Link>
               </li>
               <li className="ml-5 hover:text-yellow-400 flex items-center">
-                <TicketIcon width={30} height={30} />
+                {/* <TicketIcon width={30} height={30} /> */}
                 <Link to="/now-playing" className="ml-2">
                   Now Playing
                 </Link>
@@ -77,7 +77,7 @@ export default function Navbar({
               </li> */}
               <li className="text-white text-md hover:text-yellow-400">
                 <Link to="/profil" className="mr-4 ml-4 flex items-center">
-                  <UserCircleIcon width={30} height={30} />
+                  {/* <UserCircleIcon width={30} height={30} /> */}
                   Profile
                 </Link>
               </li>
@@ -114,14 +114,14 @@ export default function Navbar({
           ) : (
             <>
               <li className="hover:text-yellow-400 flex items-center mr-7">
-                <HomeIcon width={30} height={30} />
+                {/* <HomeIcon width={30} height={30} /> */}
                 <Link to="/" className="ml-2">
                   HOME
                 </Link>
               </li>
               <li className="text-white text-md hover:text-yellow-400">
                 <Link to="/register" className="mr-4 flex items-center">
-                  <UserCircleIcon width={30} height={30} />
+                  {/* <UserCircleIcon width={30} height={30} /> */}
                   <span className="ml-2">REGISTER</span>
                 </Link>
               </li>
