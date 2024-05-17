@@ -60,14 +60,12 @@ export default function Navbar({
               <li className="hover:text-yellow-400 flex items-center">
                 {/* <HomeIcon width={30} height={30} /> */}
                 <Link to="/" className="ml-2">
-                  Home
+                  HOME
                 </Link>
               </li>
               <li className="ml-5 hover:text-yellow-400 flex items-center">
                 {/* <TicketIcon width={30} height={30} /> */}
-                <Link to="/now-playing" className="ml-2">
-                  Now Playing
-                </Link>
+                <Link to="/now-playing">NOW PLAYING</Link>
               </li>
               {/* <li className="ml-5 hover:text-yellow-400 flex items-center">
                 <FireIcon width={30} height={30} />
@@ -76,12 +74,12 @@ export default function Navbar({
                 </Link>
               </li> */}
               <li className="text-white text-md hover:text-yellow-400">
-                <Link to="/profil" className="mr-4 ml-4 flex items-center">
+                <Link to="/profil" className="mt-1 mr-4 ml-4 flex items-center">
                   {/* <UserCircleIcon width={30} height={30} /> */}
-                  Profile
+                  PROFILE
                 </Link>
               </li>
-              <li className="ml-5 hover:text-yellow-400 flex items-center">
+              <li className=" hover:text-yellow-400 flex items-center">
                 <button onClick={toggleSearch} className="focus:outline-none">
                   <MagnifyingGlassCircleIcon width={30} height={30} />
                 </button>
@@ -105,7 +103,7 @@ export default function Navbar({
               <li>
                 <button
                   onClick={handleLogout}
-                  className="text-white text-md hover:text-yellow-400 mt-1 mr-4 ml-7 "
+                  className="text-white text-md hover:text-yellow-400 mt-1 mr-4 ml-4 "
                 >
                   LOGOUT
                 </button>
@@ -127,7 +125,7 @@ export default function Navbar({
               </li>
               <li>
                 <Link
-                  className="text-white text-md hover:text-yellow-400 mt-1 mr-4 ml-5 flex item-between"
+                  className="text-white text-md hover:text-yellow-400 mr-4 ml-5 flex item-between"
                   to="/login"
                 >
                   LOGIN
