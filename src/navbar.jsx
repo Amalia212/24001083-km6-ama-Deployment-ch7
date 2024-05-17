@@ -76,7 +76,7 @@ export default function Navbar({
                 </Link>
               </li> */}
               <li className="text-white text-md hover:text-yellow-400">
-                <Link to="/profil" className="mr-4 flex items-center">
+                <Link to="/profil" className="mr-4 ml-4 flex items-center">
                   <UserCircleIcon width={30} height={30} />
                 </Link>
               </li>
